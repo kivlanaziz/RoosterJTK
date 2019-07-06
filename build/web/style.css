@@ -1,0 +1,219 @@
+
+body {
+    background-color: #bfbfbf;
+    font-family: Tw Cen MT !important;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #000d1a; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 32px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .52s;
+    padding: 16px;
+	background-color : #000d1a;
+	color: white;
+}
+
+#mainTable {
+	margin: 20px 400px 30px 20px;
+	transition: margin-left .52s;
+	background-color: #d6d6c2;
+	color: black;
+	float: left;
+	border: 1px solid;
+}
+
+#TableSearch {
+	margin: 20px 80px 30px 140px;
+	transition: margin-left .52s;
+	background-color: #d6d6c2;
+	color: black;
+	float: left;
+	border: 1px solid;
+}
+
+#TableEdit {
+	margin: 20px 120px 30px 100px;
+	transition: margin-left .52s;
+	background-color: #d6d6c2;
+	color: black;
+	float: left;
+	border: 1px solid;
+}
+
+#customSection {
+	margin: 20px 15px 20px 960px;
+	padding: 6px 0px 6px 10px;
+	position: fixed;
+	width: 360px;
+	background-color: #a3a375;
+        border-radius: 14px;
+}
+
+#inputWrapper {
+        background-color: white;
+	margin-top: 20px;
+	transition: margin-left .52s;
+	border: 1px solid;
+	height: 500px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+input {
+	width: 80%;
+	padding: 5px 0px 5px 2px;
+	background-color:  #d6d6c2;
+}
+
+input:focus {
+	width: 80%;
+	background-color:  #f5f5f0;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #000d1a;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	width: 40%;
+}
+
+select {
+	width: 50%;
+	padding: 2px 0px 2px 5px;
+}
+
+table{
+	border-collapse: collapse;
+}
+table, tr, th { 
+	border: 1px solid black;
+	padding: 5px 10px 5px 10px;
+}
+
+.tableTitle {
+	background-color: #000d1a;
+	color: white;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.editcontent {
+    margin-left: 40px;
+    padding: 6px 8px;
+    border-top: none;
+}
+
+.button {
+    background-color: #00264d;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #00264d; 
+    color: whitesmoke; 
+    border: 2px solid #000d1a;
+    border-radius: 4px;
+}
+
+.button1:hover {
+    background-color: #e6f2ff;
+    color: black;
+}
+
+.button2 {
+    background-color: #cc0000; 
+    color: white; 
+    border: 2px solid #1a0000;
+    border-radius: 4px;
+}
+
+.button2:hover {
+    background-color: #eff5f5;
+    color: black;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
